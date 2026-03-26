@@ -1,12 +1,90 @@
-# React + Vite
+# Razorpay Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern clone of the Razorpay payment gateway website built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+**Live Website:** [https://kushwanth7010.github.io/razorpay_clone/](https://kushwanth7010.github.io/razorpay_clone/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- ✨ Responsive design with Tailwind CSS
+- ⚡ Fast development with Vite
+- ⚙️ Built with React 19
+- 🎨 Modern UI components
+- 📱 Mobile-friendly interface
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend:** React 19
+- **Build Tool:** Vite 7
+- **Styling:** Tailwind CSS 4
+- **Deployment:** GitHub Pages
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/kushwanth7010/razorpay_clone.git
+cd razorpay_clone
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+### Development
+
+Run the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+### Build
+
+Build for production:
+```bash
+npm run build
+```
+
+### Preview
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+### Deploy
+
+Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
+
+## Project Structure
+
+```
+├── index.html
+├── package.json
+├── vite.config.js
+├── style.css
+├── images/
+└── .github/
+    └── workflows/
+        └── deploy.yml
+```
+
+## Deployment
+
+This project is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. The deployment workflow is configured in `.github/workflows/deploy.yml`.
+
+## License
+
+This project is open source and available under the MIT License.
