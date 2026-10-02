@@ -1,90 +1,60 @@
-# Razorpay Clone
+# Razorpay-Inspired Landing Page (Portfolio Clone)
 
-A modern clone of the Razorpay payment gateway website built with React, Vite, and Tailwind CSS.
+A **static, educational front-end recreation** of a payment-platform landing page built with HTML, Tailwind CSS 4, and Vite 7. It does not process payments, access Razorpay APIs, collect real payment credentials, or represent an official Razorpay product.
 
-**Live Website:** [https://kushwanth7010.github.io/razorpay_clone/](https://kushwanth7010.github.io/razorpay_clone/)
+**Repository:** https://github.com/kushwanth7010/razorpay_clone
 
-## Features
+**GitHub Pages URL:** https://kushwanth7010.github.io/razorpay_clone/
 
-- ✨ Responsive design with Tailwind CSS
-- ⚡ Fast development with Vite
-- ⚙️ Built with React 19
-- 🎨 Modern UI components
-- 📱 Mobile-friendly interface
+## Implemented features
 
-## Tech Stack
+- Responsive landing-page layout, navigation, product sections, and branded illustrations.
+- Utility-based styling using Tailwind CSS 4.
+- Vite development server and optimized static production build.
+- Automated build and GitHub Pages deployment through GitHub Actions.
 
-- **Frontend:** React 19
-- **Build Tool:** Vite 7
-- **Styling:** Tailwind CSS 4
-- **Deployment:** GitHub Pages
+**Implementation note:** The present page is authored in `index.html` and styled with Tailwind. React packages are installed in `package.json` but the page is **not implemented with React components**. Several demonstration links (`#`) are placeholders, not working payment or account flows.
 
-## Getting Started
+## Run locally
 
-### Prerequisites
-- Node.js 18+
-- npm or yarn
+Use Node.js **22.12+** (or another version supported by Vite 7), npm, and Git.
 
-### Installation
-
-1. Clone the repository:
 ```bash
 git clone https://github.com/kushwanth7010/razorpay_clone.git
 cd razorpay_clone
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-### Development
-
-Run the development server:
-```bash
+npm ci
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
+Open the URL printed by Vite (usually http://localhost:5173).
 
-### Build
+Build and preview the deployable site:
 
-Build for production:
 ```bash
 npm run build
-```
-
-### Preview
-
-Preview the production build:
-```bash
 npm run preview
 ```
 
-### Deploy
+The build is written to `dist/`. The Vite base path is `/razorpay_clone/` so local development and GitHub Pages subpath assets resolve correctly.
 
-Deploy to GitHub Pages:
-```bash
-npm run deploy
+## Deployment and verification
+
+Pushing to `main` triggers `.github/workflows/deploy.yml`. It installs dependencies with `npm ci`, builds the site, uploads `dist/`, and deploys to GitHub Pages. Configure **Settings → Pages → Build and deployment → GitHub Actions** in the repository.
+
+Follow progress at https://github.com/kushwanth7010/razorpay_clone/actions. A passing build proves the site compiled and the deployment step succeeded; browser layout and placeholder links need separate manual checks.
+
+## Project structure
+
+```text
+index.html                    Static page markup
+style.css                     Tailwind theme and styles
+images/                       Local page illustrations and icons
+package.json                  Build scripts and dependencies
+package-lock.json             Reproducible npm dependency lockfile
+vite.config.js                Tailwind plugin and GitHub Pages base
+.github/workflows/deploy.yml  Automated build and deployment
 ```
 
-## Project Structure
+## Attribution
 
-```
-├── index.html
-├── package.json
-├── vite.config.js
-├── style.css
-├── images/
-└── .github/
-    └── workflows/
-        └── deploy.yml
-```
-
-## Deployment
-
-This project is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. The deployment workflow is configured in `.github/workflows/deploy.yml`.
-
-## License
-
-This project is open source and available under the MIT License.
+This is an independent educational UI clone. Razorpay's name and referenced branding belong to their respective owners. No affiliation, payment processing, or commercial functionality is implied.
